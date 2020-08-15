@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="circle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>Report</title>
+    <link rel="icon" href="logo.png">
+</head>
+
+<body>
+    <h1 class="text-center mt-5 mb-5">Regression report</h1>
+
+    <div class="container">
+        <p>
+            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                aria-expanded="false" aria-controls="collapseExample">
+                Details of execution
+            </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+            <ul class="list-group table general">
+                <li class="list-group-item">Estado general : Ok </li>
+                <li class="list-group-item">Plataforma : Desktop</li>
+                <li class="list-group-item">Ambiente : Prod</li>
+                <li class="list-group-item">Duracion : 7H 50m 24S</li>
+                <li class="list-group-item">Total de scenarios : 178</li>
+                <li class="list-group-item">Hora de ejecucion : 8:00 am</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-8 col-md-4">
+                <div class="cardPer">
+                    <div class="percentage">
+                        <svg width="300" height="300" viewBox="0 0 300 300">
+                            <circle class="stat" cx="150" cy="150" r="100" />
+                            <circle class="load" id="load1" cx="150" cy="150" r="100" transform="rotate(-90 150 150)" />
+                            <text class="num" id="num1" stroke-width="3" x="150" y="55%" text-anchor="middle">
+                        </svg>
+                        <h3 class="textCards text-center">13 Failed</h3>
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-4">
+                <div class="cardPer">
+                    <div class="percentage">
+                        <svg width="300" height="300" viewBox="0 0 300 300">
+                            <circle class="stat" cx="150" cy="150" r="100" />
+                            <circle class="load" id="load2" cx="150" cy="150" r="100" transform="rotate(-90 150 150)" />
+                            <text class="num" id="num2" stroke-width="3" x="150" y="55%" text-anchor="middle">
+                        </svg>
+                        <h3 class="textCards text-center">32 Passed</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-8 col-md-4">
+                <div class="cardPer">
+                    <div class="percentage">
+                        <svg width="300" height="300" viewBox="0 0 300 300">
+                            <circle class="stat" cx="150" cy="150" r="100" />
+                            <circle class="load" id="load3" cx="150" cy="150" r="100" transform="rotate(-90 150 150)" />
+                            <text class="num" id="num3" stroke-width="3" x="150" y="55%" text-anchor="middle">
+                        </svg>
+                        <h3 class="textCards text-center">6 Skipped</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-center mt-5 mb-5">Features</h1>
+
+        <div id="accordion">
+            <div class="card mb-3">
+                <div class="card-header" id="headingOne">
+                    
+                    <div class="row">
+                        <h5 class="mb-0">
+                            <button class="btn btn-light" data-toggle="collapse" data-target="#collapse1"
+                                aria-expanded="true" aria-controls="collapse1">
+                                Homepage
+                            </button>
+                        </h5>
+                    </div>
+                    
+                </div>
+                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordion">
+                    <div class="card-body">
+                        <h5 class="text-left  mb-2 ml-3 mt-5">5 Passed scenarios</h5>
+                            <div class="progress" style="height: 25px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                            <h5 class="text-left mt-5 mb-2 ml-3">20 Skipped scenarios</h5>
+                                <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                                <h5 class="text-left mt-5 mb-2 ml-3">30 Failed scenarios</h5>
+                                    <div class="progress" style="height: 25px;">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-center"></div>
+                                            <button type="button" class="btn btn-outline-success mt-5">View More</button>
+                                           
+                                        </div>
+                                    </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header" id="heading2">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse2"
+                            aria-expanded="true" aria-controls="collapse3">
+                            Community detail
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse2" class="collapse show" aria-labelledby="heading2" data-parent="#accordion">
+                    <div class="card-body">
+                        <h5 class="text-left  mb-2 ml-3">5 Passed scenarios</h5>
+                            <div class="progress" style="height: 25px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                            <h5 class="text-left mt-5 mb-2 ml-3">20 Skipped scenarios</h5>
+                                <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                                <h5 class="text-left mt-5 mb-2 ml-3">30 Failed scenarios</h5>
+                                    <div class="progress" style="height: 25px;">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-center"></div>
+                                            <button type="button" class="btn btn-outline-success mt-5">View More</button>
+                                           
+                                        </div>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-3">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapse3"
+                            aria-expanded="true" aria-controls="collapse3">
+                            Brochures
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapse3" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <h5 class="text-left  mb-2 ml-3">5 Passed scenarios</h5>
+                            <div class="progress" style="height: 25px;">
+                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                            </div>
+                            <h5 class="text-left mt-5 mb-2 ml-3">20 Skipped scenarios</h5>
+                                <div class="progress" style="height: 25px;">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%"
+                                        aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                </div>
+                                <h5 class="text-left mt-5 mb-2 ml-3">30 Failed scenarios</h5>
+                                    <div class="progress" style="height: 25px;">
+                                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%"
+                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col text-center"></div>
+                                            <button type="button" class="btn btn-outline-success mt-5">View More</button>
+                                           
+                                        </div>
+                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="text-left  mb-2 ml-3 mt-5">5 Passed scenarios</h2>
+
+
+
+
+
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <script>
+            let text1 = document.querySelector("#num1");
+            let load1 = document.querySelector("#load1");
+            let numToText1 = 24;
+            text1.textContent = numToText1 + "%";
+
+            let text2 = document.querySelector("#num2");
+            let load2 = document.querySelector("#load2");
+            let numToText2 = 65;
+            text2.textContent = numToText2 + "%";
+
+            let text3 = document.querySelector("#num3");
+            let load3 = document.querySelector("#load3");
+            let numToText3 = 11;
+            text3.textContent = numToText3 + "%";
+
+
+
+        </script>
+
+</body>
+
+</html>
